@@ -1,0 +1,19 @@
+Customer_Name=input("Customer Name : ")
+Date=input("Date : ")
+Customer_Number=input("Customer Number : ")
+Customer_Adress=input("Custmoer Adress : ")
+Customer_Purchased_Item =input("Customer Purchased Item: ")
+Amount=int(input("Customer Item Price : "))
+total_items=int(input("Enter niumber of items purchased : "))
+total=Amount*total_items
+discount=Amount*total_items/15
+MAX_amount=total-discount
+print("{}".format(MAX_amount))
+GST=int(input("Enter the percent of GST:"))
+After_GST=(MAX_amount/9)
+print("GST+MAX_amount = {}".format(After_GST))
+SGST=int(input("Enter the percent of SGST:"))
+After_SGST=MAX_amount/9
+print("SGST = {}".format(After_SGST))
+Net_Amount=MAX_amount+After_GST+After_SGST
+print("Net Amount = {}".format(Net_Amount))
